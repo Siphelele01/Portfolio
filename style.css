@@ -77,7 +77,7 @@ body {
   object-fit: cover;
 }
 .download {
-  background-color: #4e9eff;
+  background-color: #3c40a0;
   padding: 10px 20px;
   border-radius: 8px;
   color: white;
@@ -87,7 +87,7 @@ body {
 }
 
 .download:hover {
-  background-color: #3c40a0;
+  background-color: #4e9eff;
 }
 /* About Section Container */
 .about{
@@ -198,7 +198,7 @@ body {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
+
 }
 
 .projects-section {
@@ -220,11 +220,12 @@ body {
 }
 
 .project-card {
-  background: #2c3a5f;
+  
   padding: 25px;
   border-radius: 15px;
   color: white;
   transition: all 0.3s;
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
 }
 
 .project-card:hover {
@@ -245,6 +246,10 @@ body {
 .contact-content {
   background: #10192f;
   padding: 60px 10%;
+  
+}
+.contact-details p{
+  margin-left: -50px;
 }
 
 .contact-content h1 {
@@ -256,13 +261,14 @@ body {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 50%;
   background: #2a3554;
   border: none;
   padding: 15px;
   color: #fff;
   border-radius: 10px;
   margin-bottom: 15px;
+  margin-left: 250px;
 }
 
 .submit {
@@ -272,6 +278,7 @@ form textarea {
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 250px;
 }
 
 .submit:hover {
@@ -366,4 +373,5 @@ form textarea {
     margin: 10px auto;
   }
 }
+
 
