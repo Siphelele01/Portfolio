@@ -89,6 +89,23 @@ body {
 .download:hover {
   background-color: #4e9eff;
 }
+.download-cv {
+  background-color: #3c40a0;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 10%;
+}
+.download-cv a{
+  color:white;
+text-decoration: none;
+}
+
+.download-cv:hover {
+  background-color: #4e9eff;
+}
 /* About Section Container */
 .about{
   background: #1a2235;
@@ -246,11 +263,12 @@ body {
 .contact-content {
   background: #10192f;
   padding: 60px 10%;
-  
 }
-.contact-details p{
-  margin-left: -50px;
+.contact-details{
+  margin-left: -100px;
+  margin-top: 20px;
 }
+
 
 .contact-content h1 {
   font-size: 2.5rem;
@@ -269,6 +287,7 @@ form textarea {
   border-radius: 10px;
   margin-bottom: 15px;
   margin-left: 250px;
+  
 }
 
 .submit {
@@ -290,6 +309,16 @@ form textarea {
   color: white;
   margin-right: 10px;
   transition: color 0.3s;
+}
+.social i{
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 10px;
+  transition: color 0.3s;
+  margin-top: 10px;
+}
+.social :hover{
+  color: #4e9eff;
 }
 
 .social-icons i:hover {
@@ -373,5 +402,6 @@ form textarea {
     margin: 10px auto;
   }
 }
+
 
 
