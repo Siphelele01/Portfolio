@@ -10,7 +10,7 @@ body {
   color: white;
   line-height: 1.6;
 }
-
+/*.......................home.......................*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -68,6 +68,15 @@ body {
   color: #4e9eff;
   font-weight: bold;
 }
+.social-icons i {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+.social-icons i:hover {
+  color: #4e9eff;
+}
 
 .profile-image img {
   width: 300px;
@@ -89,6 +98,7 @@ body {
 .download:hover {
   background-color: #4e9eff;
 }
+
 .download-cv {
   background-color: #3c40a0;
   padding: 10px;
@@ -106,7 +116,7 @@ text-decoration: none;
 .download-cv:hover {
   background-color: #4e9eff;
 }
-/* About Section Container */
+/*..........................About Section Container............................*/
 .about{
   background: #1a2235;
   padding: 50px;
@@ -161,20 +171,7 @@ text-decoration: none;
     margin-top: -35px;
 }
 
-/* Profile Image 
-.about-content img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #007BFF;
-  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.about-content img:hover {
-  transform: scale(1.05);
-}*/
+/*..........................Skills.................................*/
 .skills-content{
    padding: 55px;
 }
@@ -217,7 +214,7 @@ text-decoration: none;
   transform: translateY(-5px);
 
 }
-
+/*................................Projects.........................*/
 .projects-section {
   background: #1a2235;
   padding: 60px 10%;
@@ -235,7 +232,9 @@ text-decoration: none;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
-
+.project-card a{
+  color: blue;
+}
 .project-card {
   
   padding: 25px;
@@ -259,7 +258,14 @@ text-decoration: none;
   display: inline-block;
   margin: 10px 0;
 }
-
+.project-card img{
+  width:100%; 
+  height:180px; 
+  object-fit:cover; 
+  border-radius:10px; 
+  margin-bottom:15px;
+}
+/*..............................Contact.............................*/
 .contact-content {
   background: #10192f;
   padding: 60px 10%;
@@ -303,13 +309,6 @@ form textarea {
 .submit:hover {
   background-color: #3c40a0;
 }
-
-.social-icons i {
-  font-size: 1.5rem;
-  color: white;
-  margin-right: 10px;
-  transition: color 0.3s;
-}
 .social i{
   font-size: 1.5rem;
   color: white;
@@ -321,16 +320,6 @@ form textarea {
   color: #4e9eff;
 }
 
-.social-icons i:hover {
-  color: #4e9eff;
-}
-.project-card img{
-  width:100%; 
-  height:180px; 
-  object-fit:cover; 
-  border-radius:10px; 
-  margin-bottom:15px;
-}
 /* Certificate Container Styling 
 .certificate-container {
   padding: 30px;
@@ -401,3 +390,4 @@ form textarea {
     margin: 10px auto;
   }
 }
+
