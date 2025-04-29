@@ -331,11 +331,10 @@ form textarea {
   border-radius:10px; 
   margin-bottom:15px;
 }
-/* Container Styling */
-/* Certificate Container Styling */
+/* Certificate Container Styling 
 .certificate-container {
   padding: 30px;
-  border: 3px solid #007BFF; /* Tech-friendly blue tone */
+  border: 3px solid #007BFF; /* Tech-friendly blue tone 
   border-radius: 20px;
   background: linear-gradient(135deg, #f9f9f9, #ffffff);
   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1);
@@ -352,7 +351,7 @@ form textarea {
   box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
 }
 
-/* Section Title Styling */
+/* Section Title Styling
 .certificate-grid {
   width: 100%;
   font-size: 30px;
@@ -368,7 +367,7 @@ form textarea {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Certificate Image Styling */
+/* Certificate Image Styling 
 .certificate-container img {
   width: 100%;
   max-width: 240px;
@@ -386,7 +385,7 @@ form textarea {
   border: 2px solid #007BFF;
 }
 
-/* Responsive Tweaks */
+/* Responsive Tweaks 
 @media (max-width: 768px) {
   .certificate-container {
     padding: 20px;
@@ -402,7 +401,3 @@ form textarea {
     margin: 10px auto;
   }
 }
-
-
-
-
