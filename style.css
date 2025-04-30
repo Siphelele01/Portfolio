@@ -173,7 +173,7 @@ text-decoration: none;
 
 /*..........................Skills.................................*/
 .skills-content{
-   padding: 55px;
+   padding: 35px;
 }
 .skills-border{
   padding: 20px 20px;
@@ -202,7 +202,20 @@ text-decoration: none;
   padding: 50px 15%;
 }
 
-
+.skill-c{
+  background: rgba(0, 0, 0, 0);
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.3s;
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
+}
+.skill-c:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
+  border: 2px solid #007BFF;
+}
 .skill-card {
   background: rgba(0, 0, 0, 0);
   padding: 35px;
@@ -226,7 +239,6 @@ text-decoration: none;
 
 .skill-card:hover {
   transform: translateY(-5px);
- 
   box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
   border: 2px solid #007BFF;
 }
@@ -245,8 +257,11 @@ text-decoration: none;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
+.mars img{
+  width: 50px;
+  height: 80px;
+}
  .skill {
- 
   background: #1a2235;
   padding: 1rem;
   /*text-align: center;
@@ -261,7 +276,6 @@ text-decoration: none;
   flex-direction: column;
   align-items: center;*/
 }
-
 
 .skill img {
   width: 60px;
@@ -280,7 +294,6 @@ text-decoration: none;
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-
 /*................................Projects.........................*/
 .projects-section {
   background: #1a2235;
@@ -303,7 +316,6 @@ text-decoration: none;
   color: blue;
 }
 .project-card {
-  
   padding: 25px;
   border-radius: 15px;
   color: white;
@@ -342,8 +354,6 @@ text-decoration: none;
   margin-left: -100px;
   margin-top: 20px;
 }
-
-
 .contact-content h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -361,7 +371,6 @@ form textarea {
   border-radius: 10px;
   margin-bottom: 15px;
   margin-left: 250px;
-  
 }
 
 .submit {
@@ -373,7 +382,6 @@ form textarea {
   cursor: pointer;
   margin-left: 250px;
 }
-
 .submit:hover {
   background-color: #3c40a0;
 }
@@ -387,7 +395,6 @@ form textarea {
 .social :hover{
   color: #4e9eff;
 }
-
 .certificate-container {
   padding: 30px;
   border: 3px solid #007BFF; /* Tech-friendly blue tone */
@@ -402,18 +409,16 @@ form textarea {
   align-items: center;
   transition: box-shadow 0.3s ease-in-out;
 }
-
 .certificate-container:hover {
   box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
 }
-
 /* Section Title Styling*/
 .certificate-grid {
   width: 100%;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  color: #1a1a1a;
+  color: white;
   margin-bottom: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -422,7 +427,6 @@ form textarea {
   padding-bottom: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Certificate Image Styling */
 .certificate-container img {
   width: 100%;
@@ -434,27 +438,22 @@ form textarea {
   box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
-
 .certificate-container img:hover {
   transform: scale(1.06);
   box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
   border: 2px solid #007BFF;
 }
-
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   .certificate-container {
     padding: 20px;
   }
-
   .certificate-grid {
     font-size: 24px;
     margin-bottom: 20px;
   }
-
   .certificate-container img {
     max-width: 90%;
     margin: 10px auto;
   }
 }
-
