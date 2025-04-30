@@ -192,13 +192,16 @@ text-decoration: none;
   margin-top: -70px;
   color: #4e9eff;
 }
-
+.skills-cont{
+  background: #1a2235;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 25px;
   padding: 50px 15%;
 }
+
 
 .skill-card {
   background: rgba(0, 0, 0, 0);
@@ -209,11 +212,75 @@ text-decoration: none;
   transition: transform 0.3s;
   box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
 }
+.skills-cont{
+  padding: 20px 20px;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border: 3px solid #007BFF; /* Tech-blue border */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+  max-width: 1300px;
+  margin: 50px;
+  transition: box-shadow 0.3s ease;
+  background: #1a2235;
+}
 
 .skill-card:hover {
   transform: translateY(-5px);
-
+ 
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
+  border: 2px solid #007BFF;
 }
+/*.......................2........................*/
+.skills {
+  padding: 4rem 2rem;
+  background: #0f1624;
+  text-align: center;
+}
+
+.skills-cont h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #00b894;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+ .skill {
+ 
+  background: #1a2235;
+  padding: 1rem;
+  /*text-align: center;
+  background: #fff;
+ border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+ padding: 2rem 1rem;
+  width: 120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.skill span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
 /*................................Projects.........................*/
 .projects-section {
   background: #1a2235;
@@ -247,6 +314,7 @@ text-decoration: none;
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007BFF;
 }
 
 .project-card .tech-used {
