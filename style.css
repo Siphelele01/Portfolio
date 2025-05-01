@@ -94,6 +94,10 @@ body {
   margin-top: 300px;
   margin-left: -1355px;
 }
+.download a{
+  color:white;
+  text-decoration: none;
+}
 
 .download:hover {
   background-color: #4e9eff;
