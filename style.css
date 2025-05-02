@@ -92,13 +92,12 @@ body {
   color: white;
   text-decoration: none;
   margin-top: 300px;
-  margin-left: -1355px;
+  margin-left: -1230px;
 }
 .download a{
   color:white;
   text-decoration: none;
 }
-
 .download:hover {
   background-color: #4e9eff;
 }
@@ -349,6 +348,13 @@ text-decoration: none;
   border-radius:10px; 
   margin-bottom:15px;
 }
+.link p{
+  margin-left: -520px;
+  margin-top: 250px;
+}
+.link a{
+  color: blue;
+}
 /*..............................Contact.............................*/
 .contact-content {
   background: #10192f;
@@ -461,3 +467,4 @@ form textarea {
     margin: 10px auto;
   }
 }
+
