@@ -15,32 +15,69 @@
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
 }
+
 .navbar h1 {
-font-size: 1.8rem;
-color: #4e9eff;
+  font-size: 1.8rem;
+  color: #4e9eff;
+  margin: 0;
 }
+
 .navbar ul {
-display: flex;
-list-style: none;
-gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
+
 .navbar ul li a {
-color: white;
-text-decoration: none;
-transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
 }
+
 .navbar ul li a:hover {
-color: #4e9eff;
+  color: #4e9eff;
 }
+
 nav ul li {
   margin: 0 10px;
 }
+
 nav ul li a.active {
-  color: #007BFF; /* Highlight active nav item */
+  color: #007BFF;
   font-weight: bold;
   border-bottom: 2px solid #007BFF;
 }
+
+/* ✅ Mobile responsiveness: row layout with smaller font */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar ul {
+    flex-direction: row;     /* change to row layout */
+    flex-wrap: wrap;         /* allow wrapping to new line if needed */
+    gap: 1rem;               /* smaller spacing */
+  }
+
+  .navbar ul li a {
+    font-size: 0.85rem;      /* reduce font size to fit */
+    padding: 5px 0;
+  }
+}
+
+
 
 body {
   background: linear-gradient(to right, #0f1624, #1a2235);
@@ -49,16 +86,34 @@ body {
 }
 
 
-.home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  padding: 5% 10%;
+/* Container and Row Styling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-.home-content {
-  max-width: 600px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Home Section */
+.home {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 60px 20px;
+  min-height: 100vh;
+  margin-top: 60px;
 }
 
 .home-content h3 {
@@ -76,14 +131,22 @@ body {
   color: #4e9eff;
   font-weight: bold;
 }
+
 .social-icons i {
   font-size: 1.5rem;
   color: white;
   margin-right: 10px;
   transition: color 0.3s;
 }
+
 .social-icons i:hover {
   color: #4e9eff;
+}
+
+/* Profile Image */
+.profile-image {
+  display: flex;
+  justify-content: center;
 }
 
 .profile-image img {
@@ -93,40 +156,49 @@ body {
   border: 5px solid #4e9eff;
   object-fit: cover;
 }
+
+/* Download Button */
 .download {
-  background-color: #3c40a0;
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  margin-top: 300px;
-  margin-left: -1230px;
-}
-.download a{
-  color:white;
-  text-decoration: none;
-}
-.download:hover {
-  background-color: #4e9eff;
-}
-
-.download-cv {
-  background-color: #3c40a0;
-  padding: 10px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
   margin-top: 20px;
-  width: 10%;
-}
-.download-cv a{
-  color:white;
-text-decoration: none;
 }
 
-.download-cv:hover {
+.download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3c40a0;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.download a:hover {
   background-color: #4e9eff;
 }
+
+/* Responsive for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .col {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .home-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .download a {
+    width: 100%;
+  }
+
+  .profile-image {
+    margin-top: 30px;
+  }
+}
+
 /*..........................About Section Container............................*/
 .about{
   background: #1a2235;
@@ -361,7 +433,7 @@ text-decoration: none;
 }
 .link p{
   margin-left: -520px;
-  margin-top: 250px;
+  margin-top: 360px;
 }
 .link a{
   color: blue;
@@ -372,7 +444,7 @@ text-decoration: none;
   padding: 60px 10%;
 }
 .contact-details{
-  margin-left: -100px;
+  margin-left: 100px;
   margin-top: 20px;
 }
 .contact-content h1 {
@@ -380,6 +452,23 @@ text-decoration: none;
   text-align: center;
   color: #4e9eff;
   margin-bottom: 30px;
+}
+/* Download Button */
+.download-cv {
+  margin-top: 20px;
+}
+
+.download-cv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3c40a0;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.download-cv a:hover {
+  background-color: #4e9eff;
 }
 
 form input,
@@ -391,7 +480,10 @@ form textarea {
   color: #fff;
   border-radius: 10px;
   margin-bottom: 15px;
-  margin-left: 250px;
+  margin-left: 100px;
+}
+.form{
+  margin-top: 30px
 }
 
 .submit {
