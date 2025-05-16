@@ -13,6 +13,9 @@
 <header> 
   <nav class="navbar">
     <h1>Portfolio</h1>
+    <button id="burger" aria-label="Toggle menu" aria-expanded="false">
+      &#9776; <!-- burger icon -->
+    </button>
     <ul id="nav-links">
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#about" class="nav-link">About Me</a></li>
@@ -63,50 +66,45 @@
   </section>
 
 <!--..........................SKILLS.......................-->
-        <section id="skills" class="skills">
-          <div class="skills-border">
-            <div class="skills-content">
-              <h2>Skills</h2>
-              <h3>Programming Languages</h3>
-              <div class="card-container">
-                <div class="skill-c">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-                  <span>HTML</span>
-                </div>
-                <div class="skill-c">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-c">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-                  <span>Java</span>
-                </div>
-                
-                <div class="skill-c">
-                  <img src="https://img.icons8.com/color/48/oracle-logo.png" alt="Oracle Apex" />
-                  <span>Oracle Apex</span>
-                </div>
-                <div class="skill-c">
-                  <img src="https://img.icons8.com/fluency/48/visual-basic.png" alt="VB.Net" />
-                  <span>VB.Net</span>
-                </div>
-                <div class="skill-c">
-                  <div class="mars">
-                  <img src="https://th.bing.com/th/id/OIP.HIU_x6SGtreO7W3fyVNgkQHaHa?rs=1&pid=ImgDetMain" alt="MIPS" />
-                  <span>MIPS</span>
-                </div>
-                </div>
-                <div class="skill-c">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-                  <span>CSS</span>
-                </div>
-                <div class="skill-c">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                    <span>Python</span>
-                  </div>
-              </div>
-              </div>
-            </div>
+<section id="skills" class="skills">
+  <div class="skills-border">
+    <div class="skills-content">
+      <h2>Skills</h2>
+      <h3>Programming Languages</h3>
+      <div class="card-container">
+        <div class="skill-c">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-c">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-c">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+        <div class="skill-c">
+          <img src="https://img.icons8.com/color/48/oracle-logo.png" alt="Oracle Apex" />
+          <span>Oracle Apex</span>
+        </div>
+        <div class="skill-c">
+          <img src="https://img.icons8.com/fluency/48/visual-basic.png" alt="VB.Net" />
+          <span>VB.Net</span>
+        </div>
+        
+        <div class="skill-c">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-c">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
             <div class="skill">
               <div class="skills-cont">
                 <h3>Development & Deployment</h3>
@@ -170,17 +168,24 @@
         <h3>Restaurant App</h3>
         <span class="tech-used">Oracle Apex</span>
  <p>
-          Developed an online ordering and table booking system to help restaurants reduce lines during busy days.
-          login as Manager: 
-          <h4>Username : siphelelegwabavu@gmail.com
-                            password : sphelele</h4>
-          login as Custormer: 
-          <h4>Username : MOSULIFAYIFAYI
-                              password : mosuli12345</h4>
-              login as Cashier: 
-          <h4>Username : AMANDANTOZAKHE
-                              password : amanda12345</h4>
-        </p>
+  Developed an online ordering and table booking system to help restaurants reduce lines during busy days.
+</p>
+
+<div id="more-text" style="display: none;">
+  <h4>Login as Manager:</h4>
+  <p>Username: siphelelegwabavu@gmail.com<br>
+     Password: sphelele</p>
+
+  <h4>Login as Customer:</h4>
+  <p>Username: MOSULIFAYIFAYI<br>
+     Password: mosuli12345</p>
+
+  <h4>Login as Cashier:</h4>
+  <p>Username: AMANDANTOZAKHE<br>
+     Password: amanda12345</p>
+</div>
+
+<a href="#" id="toggle-link" onclick="toggleText(event)">See more</a><br>
         <a href="https://apex.oracle.com/pls/apex/r/restaurant_app/restaurant-app/login200?session=111144129946842">restaurant_app</a>
       </div>
 
@@ -207,7 +212,7 @@
 </section>
 
 <!--..........................CERTIFICATES.......................-->
-<section id ="certificates">
+<section id="certificates">
   <div class="certificate-container">
     <div class="certificate-grid">My Certificates</div>
     <img src="certificates/html,javascript,css.PNG" alt="Certificate 2">
@@ -217,8 +222,8 @@
       <p>For more certificates: <a href="https://www.linkedin.com/in/siphelele-gwabavu-98a684307/details/certifications/">Click here</a></p>
     </div>
   </div>
-  </div>
 </section>
+
 
 <!--..........................CONTACT.......................-->
 <section id="contact" class="contact-content">
@@ -255,7 +260,6 @@
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
 
-
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
@@ -272,8 +276,30 @@
       }
     });
   });
-  
+
+  // Burger menu toggle (outside scroll event)
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isActive = nav.classList.toggle('active');
+    burger.setAttribute('aria-expanded', isActive);
+  });
+  function toggleText(event) {
+    event.preventDefault();
+    const moreText = document.getElementById("more-text");
+    const link = document.getElementById("toggle-link");
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      link.textContent = "See less";
+    } else {
+      moreText.style.display = "none";
+      link.textContent = "See more";
+    }
+  }
 </script>
+
 
 </body>
 </html>
