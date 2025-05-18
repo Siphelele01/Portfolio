@@ -86,22 +86,15 @@ nav ul li a.active {
   font-weight: bold;
   border-bottom: 2px solid #007BFF;
 }
-
-
   .navbar h1 {
     font-size: 1.5rem;
   }
-
-
-
 
 body {
   background: linear-gradient(to right, #0f1624, #1a2235);
   color: white;
   line-height: 1.6;
 }
-
-
 /* Container and Row Styling */
 .container {
   width: 100%;
@@ -130,6 +123,8 @@ body {
   padding: 60px 20px;
   min-height: 100vh;
   margin-top: 60px;
+   scroll-margin-top: 60px; /* Adjust this to match your navbar height */
+  padding-top: 40px;
 }
 
 .home-content h3 {
@@ -278,7 +273,9 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  padding: 10px 10%;
 }
+
 
 .skill-c {
   background: #f0f0f0;
@@ -294,9 +291,9 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
   .skill-c {
-    padding: 6px;
+    padding: 4px;
     font-size: 0.85rem;
-    max-width: 140px;   /* limit max width on mobile */
+    max-width: 100px;   /* limit max width on mobile */
     margin: 0 auto;     /* center cards inside their grid cells */
   }
   .skill-c img {
@@ -330,12 +327,7 @@ body {
   background: #1a2235;
   padding: 50px;
 }
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 25px;
-  padding: 10px 15%;
-}
+
 
 .skill-c{
   background: rgba(0, 0, 0, 0);
@@ -485,8 +477,8 @@ body {
   color:blue;
 }
 .link p{
-  margin-left: -220px;
-  margin-top: 360px;
+  margin-right: 150px;
+  
 }
 .link a{
   color: blue;
@@ -563,7 +555,7 @@ form textarea {
 }
 
 .certificate-container {
-  padding: 30px;
+  padding: 60px;
   border: 3px solid #007BFF; /* Tech-friendly blue tone */
   border-radius: 20px;
   background: #1a2235;
@@ -575,6 +567,7 @@ form textarea {
   justify-content: center;
   align-items: center;
   transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 100px;
 }
 /* Ensure scroll offset so the title isn't hidden by fixed navbar */
 #certificates {
