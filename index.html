@@ -300,6 +300,19 @@
       link.textContent = "See more";
     }
   }
+  function toggleMoreSkills(event) {
+    event.preventDefault(); // Prevents page jump
+    const section = document.getElementById("moreSkills");
+    const link = document.getElementById("showMoreLink");
+
+    if (section.style.display === "none") {
+      section.style.display = "block";
+      link.innerHTML = "▼ Hide";
+    } else {
+      section.style.display = "none";
+      link.innerHTML = "▶ See more";
+    }
+  }
 </script>
 
 
