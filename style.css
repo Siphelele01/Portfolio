@@ -270,6 +270,7 @@ body {
   padding: 2rem 1rem 3rem;
   background: #0f1624;
   text-align: center;
+  scroll-margin-top: 50px;
 }
 
 .skills-border {
