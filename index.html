@@ -28,24 +28,45 @@
 </header>
 
 <!--..........................HOME.......................-->
+
 <section id="home" class="home">
   <div class="container">
     <div class="row">
       <div class="col home-content">
-        <h3>Hello, It's Me</h3>
-        <h2>Siphelele Gwabavu</h2>
-        <p>I'm a <span class="highlight">Full-Stack Developer</span></p>
-        <p>Passionate about creating dynamic and responsive web and desktop applications.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/siphelele-gwabavu/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Siphelele01/"><i class="fa-brands fa-github"></i></a>
+        <h3 class="greeting">Hello, I'm</h3>
+        <h1 class="name">Siphelele Gwabavu</h1>
+        <div class="typing-container">
+          <p class="title">I'm a <span class="highlight typed"></span></p>
         </div>
-        <div class="download">
-          <a href="certificates/SGwabavu-Resume(01).pdf">Download CV</a>
+        <p class="summary">Full-stack developer specializing in building responsive web applications with modern JavaScript frameworks and robust backend systems. Focused on delivering clean, efficient code and exceptional user experiences.</p>
+        
+        <div class="tech-stack">
+          <div class="tech-item">JavaScript</div>
+          <div class="tech-item">React</div>
+          <div class="tech-item">Node.js</div>
+          <div class="tech-item">Python</div>
+          <div class="tech-item">SQL</div>
+        </div>
+        
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/siphelele-gwabavu/" aria-label="LinkedIn" title="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Siphelele01/" aria-label="GitHub" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        
+        <div class="cta-buttons">
+          
+          <a href="certificates/SGwabavu-Resume(01).pdf" class="download-cv">Download CV</a>
         </div>
       </div>
       <div class="col profile-image">
-        <img src="images/Siphelele_Gwabavu.JPG" alt="Siphelele Gwabavu">
+        <div class="image-wrapper">
+          <img src="images/Siphelele_Gwabavu.JPG" alt="Siphelele Gwabavu" class="profile-img">
+          <div class="glow-effect"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -230,9 +251,9 @@
         <a href="https://www.linkedin.com/in/siphelele-gwabavu/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Siphelele01/"><i class="fab fa-github"></i></a>
       </div>
-      <div class="download-cv">
-        <a href="certificates/SGwabavu-Resume(01).pdf">Download CV</a>
-      </div>
+      <div class="cta-buttons">
+     <a href="certificates/SGwabavu-Resume(01).pdf" class="download-cv">Download CV</a>
+        </div>
     </div>
   <div class="form">
     <div class="contact-form">
@@ -309,6 +330,41 @@
       link.innerHTML = "▶ See more";
     }
   }
+  document.addEventListener('DOMContentLoaded', function() {
+  const typed = document.querySelector('.typed');
+  const titles = ['Full-Stack Developer', 'Problem Solver', 'Software Developer', 'Tech Enthusiast'];
+  let currentTitle = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 150;
+  
+  function type() {
+    const fullText = titles[currentTitle];
+    
+    if (isDeleting) {
+      typed.textContent = fullText.substring(0, charIndex - 1);
+      charIndex--;
+      typingSpeed = 100;
+    } else {
+      typed.textContent = fullText.substring(0, charIndex + 1);
+      charIndex++;
+      typingSpeed = 150;
+    }
+    
+    if (!isDeleting && charIndex === fullText.length) {
+      isDeleting = true;
+      typingSpeed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      currentTitle = (currentTitle + 1) % titles.length;
+      typingSpeed = 500;
+    }
+    
+    setTimeout(type, typingSpeed);
+  }
+  
+  setTimeout(type, 1000);
+});
 </script>
 
 
