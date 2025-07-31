@@ -9,8 +9,8 @@
  
 </head>
 <body>
-
-<header> 
+ 
+<header>
   <nav class="navbar">
     <h1>Portfolio</h1>
     <button id="burger" aria-label="Toggle menu" aria-expanded="false">
@@ -26,9 +26,9 @@
     </ul>
   </nav>
 </header>
-
+ 
 <!--..........................HOME.......................-->
-
+ 
 <section id="home" class="home">
   <div class="container">
     <div class="row">
@@ -39,7 +39,7 @@
           <p class="title">I'm a <span class="highlight typed"></span></p>
         </div>
         <p class="summary">Full-stack developer specializing in building responsive web applications with modern frameworks and robust backend systems. Focused on delivering clean, efficient code and exceptional user experiences.</p>
-        
+       
         <div class="tech-stack">
           <div class="tech-item">JavaScript</div>
           <div class="tech-item">React</div>
@@ -47,7 +47,7 @@
           <div class="tech-item">Python</div>
           <div class="tech-item">SQL</div>
         </div>
-        
+       
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/siphelele-gwabavu/" aria-label="LinkedIn" title="LinkedIn Profile">
             <i class="fab fa-linkedin-in"></i>
@@ -56,9 +56,9 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
-        
+       
         <div class="cta-buttons">
-          
+         
           <a href="certificates/SGwabavu-Resume(01).pdf" class="download-cv">Download CV</a>
         </div>
       </div>
@@ -71,8 +71,8 @@
     </div>
   </div>
 </section>
-
-
+ 
+ 
 <!--..........................ABOUT.......................-->
 <section id="about" class="about">
   <div class="about-card">
@@ -85,7 +85,7 @@
     </div>
     </div>
   </section>
-
+ 
 <!--..........................SKILLS.......................-->
 <section id="skills" class="skills">
   <div class="skills-border">
@@ -138,13 +138,13 @@
           <span>MySQL</span>
         </div>
       </div>
-
+ 
       <div class="show-more-container">
         <a href="#" id="showMoreLink" onclick="toggleMoreSkills(event)">
           ▶ See more
         </a>
       </div>
-
+ 
       <div id="moreSkills" style="display: none;">
         <div class="skills-cont">
           <h3>Development & Deployment</h3>
@@ -171,22 +171,24 @@
     </div>
   </div>
 </section>
-
+ 
+<!--..........................PROJECTS.......................-->
 <!--..........................PROJECTS.......................-->
 <section id="projects" class="projects-section">
   <div class="projects-content">
     <h2>Projects</h2>
     <div class="project-grid">
-     <div class="project-card">
-  <img src="images/chatbot.png" alt="AI Chatbot Project">
-  <h3>AI Chatbot Assistant</h3>
-  <span class="tech-used">Dialogflow, HTML & CSS</span>
-  <p>
-    Created an AI-powered educational chatbot to help users learn about AI fundamentals through interactive conversations.
-  </p>
 
-  <a href="https://elaborate-croissant-a1c669.netlify.app/">View project</a>
-</div>
+      <!-- Always visible projects -->
+      <div class="project-card">
+        <img src="images/chatbot.png" alt="AI Chatbot Project">
+        <h3>AI Chatbot Assistant</h3>
+        <span class="tech-used">Dialogflow, HTML & CSS</span>
+        <p>
+          Created an AI-powered educational chatbot to help users learn about AI fundamentals through interactive conversations.
+        </p>
+        <a href="https://elaborate-croissant-a1c669.netlify.app/">View project</a>
+      </div>
 
       <div class="project-card">
         <img src="images/chat_app.png" alt="Chat App">
@@ -203,13 +205,81 @@
         <p>Responsive e-commerce site showcasing watches and jewellery.</p>
         <a href="https://jolly-sopapillas-2589b1.netlify.app/">View Project</a>
       </div>
-      <div class="proj">
-        <p>For more projects: <a href="https://github.com/Siphelele01/">Click here</a></p>
+
+    </div> <!-- end of always visible project-grid -->
+
+    <!-- Hidden projects container (single) -->
+    <div class="more-projects">
+      <div class="project-card">
+        <img src="images/restaurant_app.png" alt="Restaurant App">
+        <h3>Restaurant App</h3>
+        <span class="tech-used">Oracle Apex</span>
+        <p>
+          Developed an online ordering and table booking system to help restaurants reduce lines during busy days.
+        </p>
+        <div id="more-text" style="display: none;">
+          <h4>Login as Manager:</h4>
+          <p>Username: siphelelegwabavu@gmail.com<br>Password: sphelele</p>
+
+          <h4>Login as Customer:</h4>
+          <p>Username: MOSULIFAYIFAYI<br>Password: mosuli12345</p>
+
+          <h4>Login as Cashier:</h4>
+          <p>Username: AMANDANTOZAKHE<br>Password: amanda12345</p>
+        </div>
+        <a href="#" id="toggle-link" onclick="toggleText(event)">See more</a><br>
+        <a href="https://apex.oracle.com/pls/apex/r/restaurant_app/restaurant-app/login200?session=111144129946842">restaurant_app</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/cartoonify.PNG" alt="Cartoonify App">
+        <h3>Cartoonify App</h3>
+        <span class="tech-used">Python, OpenCV</span>
+        <p>
+          Desktop application that offers a fun and interactive way to transform images into various cartoon styles.
+        </p>
+        <a href="https://github.com/ZisandaNodali/CartoonifyApp">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/mental-health.PNG" alt="mental-health App">
+        <h3>Mental Awareness Companion</h3>
+        <span class="tech-used">Python, OpenCV</span>
+        <p>
+          Web application built to enhance users emotional well-being through AI tools like an emotion-aware chatbot, mood tracking, voice journaling, and sentiment analysis.
+        </p>
+        <a href="https://mentalwellnesscompanion.netlify.app/">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/RemoHealth.PNG" alt="remo-health App">
+        <h3>Remo Health</h3>
+        <span class="tech-used">HTML, JavaScript, CSS</span>
+        <p>
+          The Remo-Health improve access to quality healthcare by providing an all-encompassing digital platform that links underserved communities.
+        </p>
+        <a href="https://resilient-begonia-e9be26.netlify.app/">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/library.PNG" alt="library App">
+        <h3>Library Management System</h3>
+        <span class="tech-used">Java</span>
+        <p>
+          A desktop application designed to simplify and digitize library operations. It allows librarians to manage books, members, and borrowing records efficiently.
+        </p>
+        <a href="https://github.com/ZisandaNodali/library-management">View Project</a>
       </div>
     </div>
+
+    <!-- Toggle Button -->
+    <button id="toggleProjects" class="toggle-button">Show More Projects</button>
+
   </div>
 </section>
 
+ 
+ 
 <!--..........................CERTIFICATES.......................-->
 <section id="certificates">
   <div class="certificate-container">
@@ -222,8 +292,8 @@
     </div>
   </div>
 </section>
-
-
+ 
+ 
 <!--..........................CONTACT.......................-->
 <section id="contact" class="contact-content">
   <div class="contact">
@@ -244,10 +314,10 @@
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
   <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-  
+ 
   <!-- Optional: Redirect after submission -->
   <input type="hidden" name="_next" value="thank-you.html">
-  
+ 
   <div class="submit-container">
           <button type="submit" class="submit">Submit</button>
         </div>
@@ -256,12 +326,12 @@
     </div>
   </div>
 </section>
-
+ 
 <script>
   // Active nav link on scroll
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
-
+ 
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
@@ -270,7 +340,7 @@
         current = section.getAttribute('id');
       }
     });
-
+ 
     navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href').includes(current)) {
@@ -278,11 +348,11 @@
       }
     });
   });
-
+ 
   // Burger menu toggle (outside scroll event)
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav-links');
-
+ 
   burger.addEventListener('click', () => {
     const isActive = nav.classList.toggle('active');
     burger.setAttribute('aria-expanded', isActive);
@@ -291,7 +361,7 @@
     event.preventDefault();
     const moreText = document.getElementById("more-text");
     const link = document.getElementById("toggle-link");
-
+ 
     if (moreText.style.display === "none") {
       moreText.style.display = "inline";
       link.textContent = "See less";
@@ -304,7 +374,7 @@
     event.preventDefault(); // Prevents page jump
     const section = document.getElementById("moreSkills");
     const link = document.getElementById("showMoreLink");
-
+ 
     if (section.style.display === "none") {
       section.style.display = "block";
       link.innerHTML = "▼ Hide";
@@ -320,10 +390,10 @@
   let charIndex = 0;
   let isDeleting = false;
   let typingSpeed = 150;
-  
+ 
   function type() {
     const fullText = titles[currentTitle];
-    
+   
     if (isDeleting) {
       typed.textContent = fullText.substring(0, charIndex - 1);
       charIndex--;
@@ -333,7 +403,7 @@
       charIndex++;
       typingSpeed = 150;
     }
-    
+   
     if (!isDeleting && charIndex === fullText.length) {
       isDeleting = true;
       typingSpeed = 2000;
@@ -342,14 +412,29 @@
       currentTitle = (currentTitle + 1) % titles.length;
       typingSpeed = 500;
     }
-    
+   
     setTimeout(type, typingSpeed);
   }
-  
+ 
   setTimeout(type, 1000);
 });
+
+const toggleButton = document.getElementById("toggleProjects");
+const moreProjects = document.querySelector(".more-projects");
+
+toggleButton.addEventListener("click", () => {
+  moreProjects.classList.toggle("show");
+
+  if (moreProjects.classList.contains("show")) {
+    toggleButton.textContent = "Show Less Projects";
+  } else {
+    toggleButton.textContent = "Show More Projects";
+  }
+});
+
+  
 </script>
-
-
+ 
+ 
 </body>
 </html>
